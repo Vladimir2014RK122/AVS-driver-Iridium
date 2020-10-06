@@ -8,7 +8,7 @@
 2. создайте три файла со скриптами в проект
 3. убедитесь, что файлы скриптов стоят в правльном порядке - сверху вниз: AVS-commands.js, AVS-driver.js, AVS-driver.js.
 
-<img src="img/scripts.PNG" class="img-responsive" alt=""> </div>
+![ScreenShot](https://github.com/Vladimir2014RK122/AVS-driver-Iridium/blob/main/img/scripts.png)
 
 
 ## Настройка драйвера:
@@ -33,7 +33,7 @@
 
 
 
-<img src="img/commands.PNG" class="img-responsive" alt=""> </div>
+![ScreenShot](https://github.com/Vladimir2014RK122/AVS-driver-Iridium/blob/main/img/commands.png)
 
 
 ##Настройка скриптовой части драйвера:<br>
