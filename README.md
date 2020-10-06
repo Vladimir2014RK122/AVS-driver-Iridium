@@ -21,7 +21,7 @@
 6. Установите "Script mode" : "Script only";
 7. Остальное оставьте без изменений.
 
-<img src="img/driver.PNG" class="img-responsive" alt=""> </div>
+![ScreenShot](https://github.com/Vladimir2014RK122/AVS-driver-Iridium/blob/main/img/driver.png)
 
 
 
