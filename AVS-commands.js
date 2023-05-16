@@ -17,15 +17,23 @@ var READ = 2;//  telegram type READ
 
 
 
-function Command(name, dpt, address){
+function Command(name, dpt, address, driverName){
     
     this.name = name;
-    this.dpt = dpt;   
-    return {"name":name, "dpt":dpt, "address":address}
+    this.dpt = dpt; 
+    this.driverName = driverName;
+    return {"name":name, "dpt":dpt, "address":address, "driverName":driverName}
 }
-function Feedback(name, dpt, address){
+function Feedback(name, dpt, address, driverName){
     
     this.name = name;
-    this.dpt = dpt;  
-    return {"name":name, "dpt":dpt, "address":address}
+    this.dpt = dpt; 
+    this.driverName = driverName;
+    return {"name":name, "dpt":dpt, "address":address, "driverName":driverName}
+}
+
+function drivers(name){
+    
+    this.name = name;
+    return {"name":name}
 }
