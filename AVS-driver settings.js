@@ -1,12 +1,17 @@
 // Unit: Commands
-var g_driver_name = "Multiport 1";
-var g_avs_driver = IR.GetDevice(g_driver_name);
+// var g_driver_name = "Multiport 1";
+// var g_avs_driver = IR.GetDevice(g_driver_name);
 var g_phy_address = 6233;
-
 var readFeedbacksWhenConnected = false;
 var timeDelayForReadRequests = 2000;// ms, min 200ms
 
+g_drivers = [
+    "My multiport device 1",
+    "My multiport device 2",       
+    "My multiport device 3"   
+];
 
+//add commands for control devices
 g_Commands = [
 
     Command("MyCommand 1" , DPT1, 1),
@@ -23,7 +28,7 @@ g_Commands = [
     
 ];
 
-
+//add feedbacks for get states of devices
 g_Feedbacks = [
 
     Feedback("MyFeedback 1" , DPT1, 1),
@@ -40,8 +45,3 @@ g_Feedbacks = [
     
 ];
 
-g_drivers = [
-    "basement Multiport mini",
-    "basement Multiport 2 (31)",       
-    "basement Multiport 3 (32)"   
-];
