@@ -66,46 +66,48 @@
   
 	g_Commands = [
 
-    	Command("command 1" , DPT1, 1),
-    	Command("command 2" , DPT2, 2),
-    	Command("command 3" , DPT3, 3),
-    	Command("command 4" , DPT4, 4),
-    	Command("command 5" , DPT5, 5),
-    	Command("command 6" , DPT6, 6),
-    	Command("command 7" , DPT7, 7),
-    	Command("command 8" , DPT8, 8),
-    	Command("command 9" , DPT9, 9),
-    	Command("command 10" , DPT10, 10),
-    	Command("command 11" , DPT11, 11)
+    	Command("command 1" , DPT1, 1, g_driver[0]),
+    	Command("command 2" , DPT2, 2, g_driver[0]),
+    	Command("command 3" , DPT3, 3, g_driver[0]),
+    	Command("command 4" , DPT4, 4, g_driver[0]),
+    	Command("command 5" , DPT5, 5, g_driver[0]),
+    	Command("command 6" , DPT6, 6, g_driver[0]),
+    	Command("command 7" , DPT7, 7, g_driver[0]),
+    	Command("command 8" , DPT8, 8, g_driver[0]),
+    	Command("command 9" , DPT9, 9, g_driver[0]),
+    	Command("command 10" , DPT10, 10, g_driver[0]),
+    	Command("command 11" , DPT11, 11, g_driver[0])
     
 	];
 
 
 	g_Feedbacks = [
 
-    	Feedback("feedback 1" , DPT1, 1),
-    	Feedback("feedback 2" , DPT2, 2),
-    	Feedback("feedback 3" , DPT3, 3),
-    	Feedback("feedback 4" , DPT4, 4),
-    	Feedback("feedback 5" , DPT5, 5),
-    	Feedback("feedback 6" , DPT6, 6),
-    	Feedback("feedback 7" , DPT7, 7),
-    	Feedback("feedback 8" , DPT8, 8),
-    	Feedback("feedback 9" , DPT9, 9),
-    	Feedback("feedback 10" , DPT10, 10),
-    	Feedback("feedback 11" , DPT11, 11)
+    	Feedback("feedback 1" , DPT1, 1, g_driver[0]),
+    	Feedback("feedback 2" , DPT2, 2, g_driver[0]),
+    	Feedback("feedback 3" , DPT3, 3, g_driver[0]),
+    	Feedback("feedback 4" , DPT4, 4, g_driver[0]),
+    	Feedback("feedback 5" , DPT5, 5, g_driver[0]),
+    	Feedback("feedback 6" , DPT6, 6, g_driver[0]),
+    	Feedback("feedback 7" , DPT7, 7, g_driver[0]),
+    	Feedback("feedback 8" , DPT8, 8, g_driver[0]),
+    	Feedback("feedback 9" , DPT9, 9, g_driver[0]),
+    	Feedback("feedback 10" , DPT10, 10, g_driver[0]),
+    	Feedback("feedback 11" , DPT11, 11, g_driver[0])
     
 	];
 	
-> **Command(name: String , dpt:Number, address:Number)** : *Object*<br>
+> **Command(name: String , dpt:Number, address:Number, driverName:String)** : *Object*<br>
 > **name** - имя команды, должно соответствовать имени команды в дереве драйверов.<br>
 > **dpt** - тип команды(DPT1...DPT11).<br>
 > **address** - адрес команды.<br>
+> **driverName** - имя драйвера.<br>
 
-> **Feedback(name: String , dpt:Number, address:Number)** : *Object*<br>
+> **Feedback(name: String , dpt:Number, address:Number, driverName:String)** : *Object*<br>
 > **name** - имя статуса, должно соответствовать имени статуса в дереве драйверов.<br>
 > **dpt** - тип статуса(DPT1...DPT11).<br>
 > **address** - адрес статуса.<br>
+> **driverName** - имя драйвера.<br>
 
 Возвращают объект: 
 
